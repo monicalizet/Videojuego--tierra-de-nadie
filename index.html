@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Tierra de Nadie - Capítulo I. Una aventura de acción 2D donde Mateo deberá escapar de una organización secreta."
+    >
+
+    <meta name="theme-color" content="#101114">
+
+    <title>Tierra de Nadie — Capítulo I</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <canvas id="particles" aria-hidden="true"></canvas>
+    <div class="noise" aria-hidden="true"></div>
+
+    <!-- =====================================
+         HEADER
+    ====================================== -->
+
+    <header class="site-header" id="Inicio">
+
+        <a class="brand" href="#Inicio" aria-label="Tierra de Nadie, inicio">
+
+            <span class="brand-mark">
+                <img
+                    src="assets/images/logoT.png"
+                    alt="Logo Tierra de Nadie"
+                    onerror="this.style.display='none';this.parentElement.classList.add('logo-fallback')"
+                >
+
+                <span class="brand-fallback">TN</span>
+            </span>
+
+            <span class="brand-name">
+                TIERRA <b>DE NADIE</b>
+                <small>CAPÍTULO I</small>
+            </span>
+
+        </a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+        >
+            ☰
+        </button>
+
+        <nav class="main-nav" id="mainNav">
+
+            <a href="#historia">HISTORIA</a>
+            <a href="#experiencia">EXPERIENCIA</a>
+            <a href="#niveles">NIVELES</a>
+            <a href="#personajes">PERSONAJES</a>
+            <a href="#arsenal">ARSENAL</a>
+
+            <a class="nav-download" href="#descarga">
+                DESCARGAR <span>↗</span>
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- =====================================
+             HERO / PORTADA
+        ====================================== -->
+
+        <section class="hero">
+
+            <div class="hero-art">
+                <div class="hero-cover"></div>
+            </div>
+
+            <div class="hero-grid"></div>
+            <div class="hero-vignette"></div>
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    <span></span>
+                    UNA AVENTURA DE ACCIÓN 2D
+                </p>
+
+                <h1>
+                    TIERRA<br>
+                    <em>DE NADIE</em>
+                </h1>
+
+                <div class="hero-rule">
+                    <span></span>
+                    CAPÍTULO I
+                </div>
+
+                <p class="hero-copy">
+                    Hay lugares de los que nadie habla.<br>
+                    Y secretos que nunca debieron salir a la luz.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a class="button button-primary" href="#descarga">
+                        <span>▶</span>
+                        DESCUBRIR EL JUEGO
+                    </a>
+
+                    <a class="button button-ghost" href="#historia">
+                        CONOCER LA HISTORIA
+                    </a>
+
+                </div>
+
+                <div class="hero-meta">
+                    <span>UN JUGADOR</span>
+                    <i></i>
+                    <span>ACCIÓN / EXPLORACIÓN</span>
+                    <i></i>
+                    <span>PC WINDOWS</span>
+                </div>
+
+            </div>
+
+            <div class="scroll-cue">
+                <span></span>
+                DESLIZA PARA EXPLORAR
+            </div>
+
+            <div class="hero-glow glow-one"></div>
+            <div class="hero-glow glow-two"></div>
+
+        </section>
+
+
+        <!-- =====================================
+             HISTORIA
+        ====================================== -->
+
+        <section class="intro section-wrap" id="historia">
+
+            <div class="section-kicker">
+                01 / LA HISTORIA
+            </div>
+
+            <div class="intro-grid">
+
+                <div>
+                    <h2>
+                        UN SECRETO<br>
+                        <em>ENTERRADO</em>
+                    </h2>
+
+                    <div class="organization-symbol">
+                        <img
+                            src="assets/images/Sol%20negro.png"
+                            alt="Símbolo de la Orden del Sol Negro"
+                        >
+                        <span>LA ORDEN DEL SOL NEGRO</span>
+                    </div>
+                </div>
+
+                <div class="intro-text">
+
+                    <p class="lead">
+                        Mateo tiene 19 años y una vida que está a punto de cambiar para siempre.
+                    </p>
+
+                    <p>
+                        Tras ser secuestrado por una organización clandestina conocida como
+                        <strong>La Orden del Sol Negro</strong>, despierta en una instalación
+                        oculta entre las montañas.
+                    </p>
+
+                    <p>
+                        Su única opción es escapar, descubrir por qué lo buscan y encontrar
+                        la conexión entre la organización y su abuelo Gabriel Ortega.
+                    </p>
+
+                    <p>
+                        Cada documento encontrado y cada enfrentamiento lo acercarán a una
+                        verdad mucho más grande de lo que imaginaba.
+                    </p>
+
+                    <a class="text-link" href="#niveles">
+                        EXPLORAR EL MUNDO <span>→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="quote-line">
+                <span>“</span>
+                <p>Algunas verdades permanecen ocultas por una razón.</p>
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             EXPERIENCIA
+        ====================================== -->
+
+        <section class="experience section-wrap" id="experiencia">
+
+            <div class="section-heading">
+
+                <div>
+                    <div class="section-kicker">
+                        02 / LA EXPERIENCIA
+                    </div>
+
+                    <h2>
+                        SOBREVIVE Y<br>
+                        <em>DESCUBRE</em>
+                    </h2>
+                </div>
+
+            </div>
+
+            <div class="feature-grid">
+
+                <article class="feature-card">
+
+                    <div class="feature-number">01</div>
+                    <div class="feature-icon">⌖</div>
+
+                    <h3>EXPLORACIÓN</h3>
+
+                    <p>
+                        Recorre instalaciones, cuevas y lugares aislados mientras
+                        buscas pistas para avanzar.
+                    </p>
+
+                    <span class="feature-line"></span>
+
+                </article>
+
+                <article class="feature-card">
+
+                    <div class="feature-number">02</div>
+                    <div class="feature-icon">✳</div>
+
+                    <h3>COMBATE</h3>
+
+                    <p>
+                        Enfrenta distintos tipos de enemigos y utiliza tus armas
+                        para sobrevivir.
+                    </p>
+
+                    <span class="feature-line"></span>
+
+                </article>
+
+                <article class="feature-card">
+
+                    <div class="feature-number">03</div>
+                    <div class="feature-icon">▤</div>
+
+                    <h3>RECURSOS</h3>
+
+                    <p>
+                        Encuentra munición y objetos de curación. Cada recurso
+                        puede marcar la diferencia.
+                    </p>
+
+                    <span class="feature-line"></span>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             NIVELES
+        ====================================== -->
+
+        <section class="levels section-wrap" id="niveles">
+
+            <div class="section-heading">
+
+                <div>
+                    <div class="section-kicker">
+                        03 / EL RECORRIDO
+                    </div>
+
+                    <h2>
+                        CINCO LUGARES,<br>
+                        <em>UN MISTERIO</em>
+                    </h2>
+                </div>
+
+            </div>
+
+            <div class="level-list">
+
+                <article class="level-row">
+
+                    <span class="level-no">01</span>
+
+                    <div class="level-art">
+                        <img
+                            src="assets/images/nivel1.png"
+                            alt="Escenario del nivel 1"
+                        >
+                    </div>
+
+                    <div class="level-info">
+                        <small>EL COMIENZO</small>
+                        <h3>EL ESCONDITE</h3>
+                        <p>El primer paso para recuperar la libertad.</p>
+                    </div>
+
+                    <span class="level-arrow">↗</span>
+
+                </article>
+
+
+                <article class="level-row">
+
+                    <span class="level-no">02</span>
+
+                    <div class="level-art">
+                        <img
+                            src="assets/images/nivel2.png"
+                            alt="Escenario del nivel 2"
+                        >
+                    </div>
+
+                    <div class="level-info">
+                        <small>TRAS LOS MUROS</small>
+                        <h3>LA INSTALACIÓN</h3>
+                        <p>Un lugar donde nada parece ser lo que aparenta.</p>
+                    </div>
+
+                    <span class="level-arrow">↗</span>
+
+                </article>
+
+
+                <article class="level-row">
+
+                    <span class="level-no">03</span>
+
+                    <div class="level-art">
+                        <img
+                            src="assets/images/nivel3.png"
+                            alt="Escenario del nivel 3"
+                        >
+                    </div>
+
+                    <div class="level-info">
+                        <small>BAJO TIERRA</small>
+                        <h3>LAS CUEVAS</h3>
+                        <p>La oscuridad esconde más que caminos.</p>
+                    </div>
+
+                    <span class="level-arrow">↗</span>
+
+                </article>
+
+
+                <article class="level-row">
+
+                    <span class="level-no">04</span>
+
+                    <div class="level-art">
+                        <img
+                            src="assets/images/nivel4.png"
+                            alt="Escenario del nivel 4"
+                        >
+                    </div>
+
+                    <div class="level-info">
+                        <small>UN PUEBLO AISLADO</small>
+                        <h3>SAN MIGUEL DEL DESIERTO</h3>
+                        <p>Las huellas de la Orden llegan más lejos de lo esperado.</p>
+                    </div>
+
+                    <span class="level-arrow">↗</span>
+
+                </article>
+
+
+                <article class="level-row">
+
+                    <span class="level-no">05</span>
+
+                    <div class="level-art">
+                        <img
+                            src="assets/images/nivel5.png"
+                            alt="Escenario del nivel 5"
+                        >
+                    </div>
+
+                    <div class="level-info">
+                        <small>EL ÚLTIMO UMBRAL</small>
+                        <h3>EL TEMPLO</h3>
+                        <p>El camino conduce al centro del secreto.</p>
+                    </div>
+
+                    <span class="level-arrow">↗</span>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================
+             PERSONAJES Y ENEMIGOS
+        ====================================== -->
+
+        <section class="characters section-wrap" id="personajes">
+
+            <div class="section-heading">
+
+                <div>
+                    <div class="section-kicker">
+                        04 / PERSONAJES
+                    </div>
+
+                    <h2>
+                        NO ESTÁS<br>
+                        <em>SOLO</em>
+                    </h2>
+                </div>
+
+            </div>
+
+            <div class="character-grid">
+
+                <article class="character-card character-main">
+
+                    <div class="character-image">
+                        <img
+                            src="assets/images/Protagonista.png"
+                            alt="Mateo, protagonista"
+                        >
+                    </div>
+
+                    <div class="character-info">
+                        <span>PROTAGONISTA</span>
+                        <h3>MATEO</h3>
+                        <p>
+                            Un joven que deberá encontrar la manera de escapar
+                            y descubrir por qué la Orden lo está buscando.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article class="character-card character-boss">
+
+                    <div class="character-image">
+                        <img
+                            src="assets/images/Boss.png"
+                            alt="El Custodio"
+                        >
+                    </div>
+
+                    <div class="character-info">
+                        <span>JEFE FINAL</span>
+                        <h3>EL CUSTODIO</h3>
+                        <p>
+                            Una de las figuras de mayor autoridad dentro
+                            de la organización.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article class="character-card">
+
+                    <div class="character-image">
+                        <img
+                            src="assets/images/Guardia1.png"
+                            alt="Guardia de la Orden"
+                        >
+                    </div>
+
+                    <div class="character-info">
+                        <span>ENEMIGO</span>
+                        <h3>GUARDIA</h3>
+                        <p>
+                            Miembros encargados de vigilar las instalaciones
+                            y detener a cualquier intruso.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article class="character-card">
+
+                    <div class="character-image">
+                        <img
+                            src="assets/images/Guardia%202.png"
+                            alt="Variante de guardia"
+                        >
+                    </div>
+
+                    <div class="character-info">
+                        <span>VARIANTE</span>
+                        <h3>GUARDIA II</h3>
+                        <p>
+                            Personal de seguridad que protege los sectores
+                            de la organización.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article class="character-card">
+
+                    <div class="character-image">
+                        <img
+                            src="assets/images/Guardia%203.png"
+                            alt="Otra variante de guardia"
+                        >
+                    </div>
+
+                    <div class="character-info">
+                        <span>VARIANTE</span>
+                        <h3>GUARDIA III</h3>
+                        <p>
+                            Diferentes miembros de la Orden aparecen
+                            durante el recorrido.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article class="character-card">
+
+                    <div class="character-image">
+                        <img
+                            src="assets/images/Guardia%204.png"
+                            alt="Guardia de la Orden"
+                        >
+                    </div>
+
+                    <div class="character-info">
+                        <span>VARIANTE</span>
+                        <h3>GUARDIA IV</h3>
+                        <p>
+                            Una amenaza más que Mateo deberá superar
+                            para continuar avanzando.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article class="character-card">
+
+                    <div class="character-image">
+                        <img
+                            src="assets/images/Guardia%205.png"
+                            alt="Guardia de la Orden"
+                        >
+                    </div>
+
+                    <div class="character-info">
+                        <span>VARIANTE</span>
+                        <h3>GUARDIA V</h3>
+                        <p>
+                            Los miembros de la organización no permitirán
+                            que Mateo escape fácilmente.
+                        </p>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             ARSENAL
+        ====================================== -->
+
+        <section class="arsenal section-wrap" id="arsenal">
+
+            <div class="arsenal-copy">
+
+                <div class="section-kicker">
+                    05 / PREPÁRATE
+                </div>
+
+                <h2>
+                    ELIGE CÓMO<br>
+                    <em>ENFRENTARTE</em>
+                </h2>
+
+                <p>
+                    La supervivencia dependerá de cómo utilices las armas
+                    y los recursos que encuentres durante el camino.
+                </p>
+
+                <div class="ammo-note">
+                    <img
+                        src="assets/images/Balas.png"
+                        alt="Munición"
+                    >
+
+                    <span>
+                        ADMINISTRA TU MUNICIÓN
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="weapon-grid">
+
+                <article class="weapon-item">
+
+                    <span>01</span>
+
+                    <div class="weapon-image">
+                        <img
+                            src="assets/images/Pistola.png"
+                            alt="Pistola"
+                        >
+                    </div>
+
+                    <b>PISTOLA</b>
+                    <small>PRECISIÓN</small>
+
+                </article>
+
+
+                <article class="weapon-item">
+
+                    <span>02</span>
+
+                    <div class="weapon-image">
+                        <img
+                            src="assets/images/Escopeta.png"
+                            alt="Escopeta"
+                        >
+                    </div>
+
+                    <b>ESCOPETA</b>
+                    <small>CORTA DISTANCIA</small>
+
+                </article>
+
+
+                <article class="weapon-item">
+
+                    <span>03</span>
+
+                    <div class="weapon-image">
+                        <img
+                            src="assets/images/Mini%20uzi.png"
+                            alt="Mini Uzi"
+                        >
+                    </div>
+
+                    <b>MINI UZI</b>
+                    <small>RÁFAGAS</small>
+
+                </article>
+
+
+                <article class="weapon-item">
+
+                    <span>04</span>
+
+                    <div class="weapon-image">
+                        <img
+                            src="assets/images/Refle.png"
+                            alt="Rifle"
+                        >
+                    </div>
+
+                    <b>RIFLE</b>
+                    <small>ALCANCE</small>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             OBJETOS Y EXPLORACIÓN
+        ====================================== -->
+
+        <section class="items-section section-wrap">
+
+            <div class="section-heading">
+
+                <div>
+                    <div class="section-kicker">
+                        06 / EXPLORACIÓN
+                    </div>
+
+                    <h2>
+                        OBSERVA E<br>
+                        <em>INTERACTÚA</em>
+                    </h2>
+                </div>
+
+            </div>
+
+
+            <div class="items-grid">
+
+                <article class="item-card">
+
+                    <div class="item-image">
+                        <img
+                            src="assets/images/Botiquien.png"
+                            alt="Botiquín"
+                        >
+                    </div>
+
+                    <h3>BOTIQUÍN</h3>
+                    <p>Un recurso para recuperar salud.</p>
+
+                </article>
+
+
+                <article class="item-card">
+
+                    <div class="item-image">
+                        <img
+                            src="assets/images/Balas.png"
+                            alt="Segundo botiquín"
+                        >
+                    </div>
+
+                    <h3>SUMINISTROS</h3>
+                    <p>Objetos útiles para continuar la aventura.</p>
+
+                </article>
+
+
+                <article class="item-card">
+
+                    <div class="item-image">
+                        <img
+                            src="assets/images/Cofre.png"
+                            alt="Cofre"
+                        >
+                    </div>
+
+                    <h3>COFRES</h3>
+                    <p>Busca objetos y recursos ocultos.</p>
+
+                </article>
+
+
+                <article class="item-card">
+
+                    <div class="item-image">
+                        <img
+                            src="assets/images/Nota.png"
+                            alt="Nota"
+                        >
+                    </div>
+
+                    <h3>DOCUMENTOS</h3>
+                    <p>Encuentra información sobre la organización.</p>
+
+                </article>
+
+
+                <article class="item-card">
+
+                    <div class="item-image">
+                        <img
+                            src="assets/images/Candado.png"
+                            alt="Candado"
+                        >
+                    </div>
+
+                    <h3>CANDADOS</h3>
+                    <p>Algunos accesos necesitan ser desbloqueados.</p>
+
+                </article>
+
+
+                <article class="item-card">
+
+                    <div class="item-image">
+                        <img
+                            src="assets/images/Palanca.png"
+                            alt="Palanca"
+                        >
+                    </div>
+
+                    <h3>PALANCAS</h3>
+                    <p>Interactúa con mecanismos del entorno.</p>
+
+                </article>
+
+
+                <article class="item-card">
+
+                    <div class="item-image">
+                        <img
+                            src="assets/images/pUERTA.png"
+                            alt="Puerta"
+                        >
+                    </div>
+
+                    <h3>PUERTAS</h3>
+                    <p>Explora nuevas zonas y encuentra accesos.</p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================
+             DESCARGA
+        ====================================== -->
+
+        <section class="download section-wrap" id="descarga">
+
+            <div class="download-panel">
+
+                <div class="download-bg"></div>
+
+                <div class="download-content">
+
+                    <div class="section-kicker">
+                        TU AVENTURA COMIENZA AQUÍ
+                    </div>
+
+                    <h2>
+                        ¿ESTÁS LISTO<br>
+                        PARA <em>DESCUBRIRLO?</em>
+                    </h2>
+
+                    <p>
+                        Prepárate para descubrir lo que se oculta
+                        detrás de La Orden del Sol Negro.
+                    </p>
+
+                    <a
+                        class="button button-primary download-button"
+                        id="downloadButton"
+                        href="#"
+                        aria-disabled="true"
+                    >
+                        DESCARGA PRÓXIMAMENTE <span>↗</span>
+                    </a>
+
+                    <small class="download-note" id="downloadNote">
+                        Versión para Windows · Enlace de descarga pendiente
+                    </small>
+
+                </div>
+
+                <div class="download-stamp">
+                    TIERRA<br>
+                    DE NADIE<br>
+                    <span>CAP. I</span>
+                </div>
+
+            </div>
+
+
+            <div class="requirements">
+
+                <span>PLATAFORMA</span>
+                <b>WINDOWS PC</b>
+
+                <i></i>
+
+                <span>FORMATO</span>
+                <b>INSTALADOR EXE</b>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================
+         FOOTER / CRÉDITOS
+    ====================================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+
+                <a class="brand" href="#Inicio">
+
+                    <span class="brand-mark">
+
+                        <img
+                            src="assets/images/logoT.png"
+                            alt="Logo Tierra de Nadie"
+                            onerror="this.style.display='none';this.parentElement.classList.add('logo-fallback')"
+                        >
+
+                        <span class="brand-fallback">TN</span>
+
+                    </span>
+
+                    <span class="brand-name">
+                        TIERRA <b>DE NADIE</b>
+                        <small>CAPÍTULO I</small>
+                    </span>
+
+                </a>
+
+                <p>
+                    Una historia. Un secreto. Ningún lugar seguro.
+                </p>
+
+            </div>
+
+
+            <div class="credits">
+
+                <div class="section-kicker">
+                    CRÉDITOS / EQUIPO DE DESARROLLO
+                </div>
+
+
+                <div class="team-grid">
+
+                    <article class="team-member">
+
+                        <h3>Alan Cesar Alavez Hernandez</h3>
+
+                        <div class="social-links">
+
+                            <a
+                                href="https://www.instagram.com/alan_waiting/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                ◎ Instagram
+                            </a>
+
+                            <a href="mailto:23302092@utfv.edu.mx">
+                                ✉ Gmail
+                            </a>
+
+                            <span>◈ afwarrouwu</span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="team-member">
+
+                        <h3>Donovan Emir Camacho Hernandez</h3>
+
+                        <div class="social-links">
+
+                            <a
+                                href="https://www.instagram.com/emir_caam/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                ◎ Instagram
+                            </a>
+
+                            <a href="mailto:23315103@utfv.edu.mx">
+                                ✉ Gmail
+                            </a>
+
+                            <span>◈ chaps7796</span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="team-member">
+
+                        <h3>Ethan Issac Medina Estrada</h3>
+
+                        <div class="social-links">
+
+                            <a
+                                href="https://www.instagram.com/itsethan.e/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                ◎ Instagram
+                            </a>
+
+                            <a href="mailto:23302078@utfv.edu.mx">
+                                ✉ Gmail
+                            </a>
+
+                            <span>◈ ethan998581</span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="team-member">
+
+                        <h3>Monica Lizet Osorio Angeles</h3>
+
+                        <div class="social-links">
+
+                            <a
+                                href="https://www.instagram.com/liz_mlzn/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                ◎ Instagram
+                            </a>
+
+                            <a href="mailto:23302147@utfv.edu.mx">
+                                ✉ Gmail
+                            </a>
+
+                            <span>◈ lizsrng_13477</span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="team-member">
+
+                        <h3>Ivan Uscanga Lara</h3>
+
+                        <div class="social-links">
+
+                            <a
+                                href="https://www.instagram.com/ivan_ul_/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                ◎ Instagram
+                            </a>
+
+                            <a href="mailto:ivanlaradesarrollo@gmail.com">
+                                ✉ Gmail
+                            </a>
+
+                            <span>◈ faider0548</span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span class="copyright">
+                © <span id="year"></span> TIERRA DE NADIE.
+            </span>
+
+            <a href="#Inicio">
+                VOLVER ARRIBA ↑
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
